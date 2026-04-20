@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IRONFORGE – Gym & Home Equipment</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-bar"></div>
+    <span class="loader-text">IRONFORGE</span>
+  </div>
+
+  <!-- CURSOR -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">IRON<span>FORGE</span></div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#categories">Categories</a></li>
+      <li><a href="#gym-eq">Gym</a></li>
+      <li><a href="#home-eq">Home</a></li>
+      <li><a href="#compare">Compare</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-cta">Shop Now</button>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#hero" class="mob-link">Home</a>
+    <a href="#categories" class="mob-link">Categories</a>
+    <a href="#gym-eq" class="mob-link">Gym Equipment</a>
+    <a href="#home-eq" class="mob-link">Home Equipment</a>
+    <a href="#compare" class="mob-link">Compare</a>
+    <a href="#contact" class="mob-link">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-label">Premium Equipment · Est. 2024</div>
+      <h1 class="hero-title">FORGE<br/><span>YOUR</span><br/>LIMITS</h1>
+      <p class="hero-sub">Professional-grade gym and home fitness equipment engineered for those who refuse to settle.</p>
+      <div class="hero-btns">
+        <a href="#gym-eq" class="btn-primary">Explore Gym Gear</a>
+        <a href="#home-eq" class="btn-outline">Home Setup</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-target="500">0</span><span>+</span><p>Products</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="12000">0</span><span>+</span><p>Customers</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="98">0</span><span>%</span><p>Satisfaction</p></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-ring ring-1"></div>
+      <div class="hero-ring ring-2"></div>
+      <div class="hero-ring ring-3"></div>
+      <div class="hero-plate">
+        <i class="fa-solid fa-dumbbell"></i>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span>FREE SHIPPING OVER ₹5000</span><span class="dot">●</span>
+      <span>PROFESSIONAL GRADE</span><span class="dot">●</span>
+      <span>EMI AVAILABLE</span><span class="dot">●</span>
+      <span>5-YEAR WARRANTY</span><span class="dot">●</span>
+      <span>EXPERT CONSULTATION</span><span class="dot">●</span>
+      <span>FREE SHIPPING OVER ₹5000</span><span class="dot">●</span>
+      <span>PROFESSIONAL GRADE</span><span class="dot">●</span>
+      <span>EMI AVAILABLE</span><span class="dot">●</span>
+      <span>5-YEAR WARRANTY</span><span class="dot">●</span>
+      <span>EXPERT CONSULTATION</span><span class="dot">●</span>
+    </div>
+  </div>
+
+  <!-- CATEGORIES -->
+  <section id="categories">
+    <div class="section-header">
+      <div class="section-label">What We Offer</div>
+      <h2>EQUIPMENT <span>CATEGORIES</span></h2>
+      <p>From commercial-grade machines to compact home gear — we have it all.</p>
+    </div>
+    <div class="cat-grid">
+      <div class="cat-card" data-filter="gym">
+        <div class="cat-icon"><i class="fa-solid fa-building"></i></div>
+        <h3>Commercial Gym</h3>
+        <p>Heavy-duty machines built for daily high-volume use in professional fitness centers.</p>
+        <a href="#gym-eq" class="cat-link">Browse →</a>
+      </div>
+      <div class="cat-card featured" data-filter="home">
+        <div class="cat-badge">Popular</div>
+        <div class="cat-icon"><i class="fa-solid fa-house"></i></div>
+        <h3>Home Gym</h3>
+        <p>Space-efficient, versatile equipment that transforms any room into a full gym.</p>
+        <a href="#home-eq" class="cat-link">Browse →</a>
+      </div>
+      <div class="cat-card" data-filter="cardio">
+        <div class="cat-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+        <h3>Cardio Zone</h3>
+        <p>Treadmills, bikes, and rowers for peak cardiovascular performance.</p>
+        <a href="#gym-eq" class="cat-link">Browse →</a>
+      </div>
+      <div class="cat-card" data-filter="strength">
+        <div class="cat-icon"><i class="fa-solid fa-dumbbell"></i></div>
+        <h3>Strength Training</h3>
+        <p>Free weights, barbells, and power racks for serious strength gains.</p>
+        <a href="#gym-eq" class="cat-link">Browse →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GYM EQUIPMENT -->
+  <section id="gym-eq">
+    <div class="section-header">
+      <div class="section-label">Commercial Grade</div>
+      <h2>GYM <span>EQUIPMENT</span></h2>
+      <p>Built for the intensity of professional fitness environments.</p>
+    </div>
+    <div class="filter-bar">
+      <button class="filter-btn active" data-cat="all">All</button>
+      <button class="filter-btn" data-cat="cardio">Cardio</button>
+      <button class="filter-btn" data-cat="strength">Strength</button>
+      <button class="filter-btn" data-cat="functional">Functional</button>
+    </div>
+    <div class="products-grid" id="gymGrid">
+      <!-- Injected by JS -->
+    </div>
+  </section>
+
+  <!-- HOME EQUIPMENT -->
+  <section id="home-eq">
+    <div class="section-header">
+      <div class="section-label">Home Fitness</div>
+      <h2>HOME <span>EQUIPMENT</span></h2>
+      <p>Compact, effective, and easy to set up in any living space.</p>
+    </div>
+    <div class="filter-bar">
+      <button class="filter-btn active" data-cat="all">All</button>
+      <button class="filter-btn" data-cat="compact">Compact</button>
+      <button class="filter-btn" data-cat="bodyweight">Bodyweight</button>
+      <button class="filter-btn" data-cat="cardio">Cardio</button>
+    </div>
+    <div class="products-grid" id="homeGrid">
+      <!-- Injected by JS -->
+    </div>
+  </section>
+
+  <!-- COMPARE SECTION -->
+  <section id="compare">
+    <div class="section-header">
+      <div class="section-label">Decision Guide</div>
+      <h2>HOME VS <span>GYM</span></h2>
+      <p>Not sure what's right for you? Here's a clear breakdown.</p>
+    </div>
+    <div class="compare-table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th class="home-col"><i class="fa-solid fa-house"></i> Home Gym</th>
+            <th class="gym-col"><i class="fa-solid fa-building"></i> Commercial Gym</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Cost</td><td class="home-col">One-time investment</td><td class="gym-col">High upfront</td></tr>
+          <tr><td>Space Required</td><td class="home-col">50–200 sq ft</td><td class="gym-col">1000+ sq ft</td></tr>
+          <tr><td>Equipment Range</td><td class="home-col">Moderate</td><td class="gym-col">Extensive</td></tr>
+          <tr><td>Maintenance</td><td class="home-col">Self-maintained</td><td class="gym-col">Professional service</td></tr>
+          <tr><td>24/7 Access</td><td class="home-col"><i class="fa-solid fa-check green"></i></td><td class="gym-col"><i class="fa-solid fa-check green"></i></td></tr>
+          <tr><td>Privacy</td><td class="home-col"><i class="fa-solid fa-check green"></i></td><td class="gym-col"><i class="fa-solid fa-xmark red"></i></td></tr>
+          <tr><td>Social Environment</td><td class="home-col"><i class="fa-solid fa-xmark red"></i></td><td class="gym-col"><i class="fa-solid fa-check green"></i></td></tr>
+          <tr><td>Resale Value</td><td class="home-col">Moderate</td><td class="gym-col">High</td></tr>
+          <tr><td>Best For</td><td class="home-col">Individuals & families</td><td class="gym-col">Fitness businesses</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="section-header">
+      <div class="section-label">Real Reviews</div>
+      <h2>WHAT CLIENTS <span>SAY</span></h2>
+    </div>
+    <div class="testimonials-track" id="testimonialTrack">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"The commercial cable machine transformed our gym's training capabilities. Incredibly durable."</p>
+        <div class="testi-author"><div class="testi-avatar">R</div><div><strong>Rahul Sharma</strong><span>Gym Owner, Delhi</span></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"Set up a full home gym in my spare room with IronForge equipment. Best investment ever."</p>
+        <div class="testi-author"><div class="testi-avatar">P</div><div><strong>Priya Mehta</strong><span>Home Athlete, Mumbai</span></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"The adjustable dumbbells save so much space without compromising on weight range."</p>
+        <div class="testi-author"><div class="testi-avatar">A</div><div><strong>Arjun Kapoor</strong><span>Fitness Coach, Bangalore</span></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★☆</div>
+        <p>"Quality treadmills at competitive pricing. The commercial grade holds up to heavy usage daily."</p>
+        <div class="testi-author"><div class="testi-avatar">S</div><div><strong>Sunita Verma</strong><span>Studio Owner, Pune</span></div></div>
+      </div>
+    </div>
+    <div class="testi-dots" id="testiDots"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="contact-info">
+        <div class="section-label">Get In Touch</div>
+        <h2>LET'S BUILD YOUR<br/><span>IDEAL GYM</span></h2>
+        <p>Whether you're setting up a home gym or a full commercial facility, our experts will guide you every step of the way.</p>
+        <div class="contact-details">
+          <div class="cd-item"><i class="fa-solid fa-phone"></i><span>+91 98765 43210</span></div>
+          <div class="cd-item"><i class="fa-solid fa-envelope"></i><span>info@ironforge.in</span></div>
+          <div class="cd-item"><i class="fa-solid fa-location-dot"></i><span>Ludhiana, Punjab, India</span></div>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <input type="text" id="name" placeholder=" " required/>
+          <label for="name">Full Name</label>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder=" " required/>
+          <label for="email">Email Address</label>
+        </div>
+        <div class="form-group">
+          <select id="interest" required>
+            <option value="" disabled selected>I'm interested in...</option>
+            <option value="home">Home Gym Setup</option>
+            <option value="commercial">Commercial Gym</option>
+            <option value="single">Single Equipment</option>
+            <option value="consultation">Free Consultation</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <textarea id="message" rows="4" placeholder=" " required></textarea>
+          <label for="message">Your Message</label>
+        </div>
+        <button type="submit" class="btn-primary full-w">Send Message <i class="fa-solid fa-arrow-right"></i></button>
+        <div class="form-success" id="formSuccess">✓ Message sent! We'll contact you shortly.</div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo">IRON<span>FORGE</span></div>
+        <p>Forging stronger bodies, building better gyms. Your trusted partner in fitness equipment since 2024.</p>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="#hero">Home</a>
+        <a href="#gym-eq">Gym Equipment</a>
+        <a href="#home-eq">Home Equipment</a>
+        <a href="#compare">Compare</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-links">
+        <h4>Equipment</h4>
+        <a href="#">Treadmills</a>
+        <a href="#">Dumbbells</a>
+        <a href="#">Power Racks</a>
+        <a href="#">Cardio Machines</a>
+        <a href="#">Resistance Bands</a>
+      </div>
+      <div class="footer-links">
+        <h4>Support</h4>
+        <a href="#">Installation Guide</a>
+        <a href="#">Warranty Policy</a>
+        <a href="#">Return Policy</a>
+        <a href="#">EMI Options</a>
+        <a href="#">FAQs</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 IronForge. All rights reserved.</p>
+      <p>Made with <i class="fa-solid fa-heart"></i> in India</p>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="productModal">
+      <button class="modal-close" id="modalClose"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- BACK TO TOP -->
+  <button class="back-top" id="backTop"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
